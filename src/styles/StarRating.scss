@@ -1,0 +1,13 @@
+// File path: src/components/StarRating.module.scss
+
+.starContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    color: #ffd700;
+    font-size: 20px;
+    margin: 0 1px;
+  }
+  

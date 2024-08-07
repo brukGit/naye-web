@@ -1,0 +1,106 @@
+@import 'settings';
+.shipping-screen {
+    .header-container {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+  
+      .back-button {
+        margin-right: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+  
+        .ionicon {
+          font-size: 24px;
+          color: #75A358;
+        }
+      }
+    }
+  
+    .container {
+      padding: 20px;
+  
+      .title {
+        font-size: 24px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .address-container{
+        display: flex;
+       
+        gap: $large-spacing;
+        width: 80%;
+        margin: auto;
+
+        .registered-address-container {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 20px;
+          gap: 20px;
+       
+    
+          .default-address-text {
+            // flex: 1;
+        
+    
+            .default-address-title {
+              font-weight: bold;
+            
+            }
+          }
+        }
+    
+        .form-container {
+          margin-bottom: 20px;
+          width: 40%;
+    
+          input {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+     
+      .cta-shipping{
+        display: flex;
+       
+        gap: $large-spacing;
+        width: 60%;
+        margin: auto;
+      }
+  
+      .summary-container {
+        margin-bottom: 20px;
+        background-color: #E8E8E8;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        gap: $small-spacing;
+  
+        .summary-text {
+          font-size: 16px;
+          margin-bottom: 5px;
+          span{
+            font-weight: bold;
+          }
+        }
+      }
+  
+      .continue-button {
+        background-color: #75A358;
+        color: white;
+        // padding: 15px;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 50%;
+      }
+    }
+  }

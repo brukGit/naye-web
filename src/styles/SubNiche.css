@@ -1,0 +1,39 @@
+.subNicheContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.prompt {
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: bold;
+  color: #eee;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.prompt:nth-child(2n) {
+  background: linear-gradient(135deg, #75A358, #A8E063);
+}
+
+.prompt:nth-child(2n+1) {
+  background: linear-gradient(135deg, #FF0099, #493240);
+}
+
+.prompt:nth-child(2n):hover {
+  background-color: #689d47;
+}
+
+.prompt:hover {
+  background-color: #689d47;
+}/*# sourceMappingURL=SubNiche.css.map */

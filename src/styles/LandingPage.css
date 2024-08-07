@@ -1,0 +1,114 @@
+.landing-page {
+  display: flex;
+  min-height: 100vh;
+}
+.landing-page .promo-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.landing-page .promo-section .promo-image {
+  max-width: 100%;
+  height: auto;
+  max-width: 80%;
+  margin-bottom: 2rem;
+}
+.landing-page .promo-section .cta-button {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.landing-page .promo-section .cta-button:hover {
+  background-color: #444;
+}
+.landing-page .login-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f2f2f2;
+  position: relative;
+  z-index: 1;
+}
+.landing-page .login-section .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+}
+.landing-page .login-section .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+}
+.landing-page .login-section h2 {
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+.landing-page .login-section .input-field {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.landing-page .login-section .login-button {
+  background-color: #222;
+  color: #75a358;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.landing-page .login-section .login-button:hover {
+  background-color: #444;
+}
+.landing-page .login-section .signup-text {
+  margin-top: 1rem;
+  font-size: 16px;
+}
+.landing-page .login-section .signup-text .signup-link {
+  color: #456134;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.landing-page .login-section .skip-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-top: 1rem;
+  border: 1px solid #75a358;
+  color: #222;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+.landing-page .login-section .skip-button:hover {
+  background-color: rgba(117, 163, 88, 0.1);
+}
+.landing-page .login-section .promo-text {
+  color: #75a358;
+}/*# sourceMappingURL=LandingPage.css.map */

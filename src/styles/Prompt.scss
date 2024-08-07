@@ -1,0 +1,45 @@
+// File path: src/components/PromptContainer.module.scss
+
+.promptContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.subPromptContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.prompt {
+  background-color: #75a358;
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.prompt:hover {
+  background-color: #689d47;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+}

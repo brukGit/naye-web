@@ -1,0 +1,126 @@
+@import './settings';
+
+.landing-page {
+  display: flex;
+  min-height: 100vh;
+
+  @include mobile {
+    // flex-direction: column;
+  }
+
+  .promo-section {
+    flex: 1;
+    @include flex-center;
+    flex-direction: column;
+    padding: $large-spacing;
+
+    .promo-image {
+      @include responsive-image;
+      max-width: 80%;
+      margin-bottom: $large-spacing;
+    }
+
+    .cta-button {
+      background-color: $primary-color;
+      color: $background-color;
+      border: none;
+      border-radius: $border-radius;
+      padding: $spacing-unit $large-spacing;
+      font-size: $base-font-size * 1.5;
+      cursor: pointer;
+      transition: background-color $transition-duration;
+
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+  }
+
+  .login-section {
+    flex: 1;
+    @include flex-center;
+    flex-direction: column;
+    padding: $large-spacing;
+    background-color: darken($background-color, 5%);
+    position: relative;
+    z-index: 1;
+
+    .logo{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+
+    }
+    .bg-image{
+      position: absolute;
+      top: 0;
+      left: 0;
+      // width: 100%;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      z-index: -1;
+      // rotate: 25deg;
+    }
+
+    h2 {
+      font-size: $base-font-size * 2;
+      margin-bottom: $large-spacing;
+    }
+
+    .input-field {
+      width: 100%;
+      max-width: 300px;
+      padding: $small-spacing;
+      margin-bottom: $spacing-unit;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+    }
+
+    .login-button {
+      background-color: $primary-color;
+      color: $secondary-color;
+      border: none;
+      border-radius: $border-radius;
+      padding: $small-spacing $spacing-unit;
+      font-size: $base-font-size;
+      cursor: pointer;
+      transition: background-color $transition-duration;
+
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+
+    .signup-text {
+      margin-top: $spacing-unit;
+      font-size: $base-font-size;
+
+      .signup-link {
+        color: darken($secondary-color, 20%);
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    .skip-button {
+      @include button-reset;
+      margin-top: $spacing-unit;
+      border: 1px solid $secondary-color;
+      color: $text-color;
+      border-radius: $border-radius;
+      padding: $small-spacing $spacing-unit;
+      font-size: $base-font-size * 0.875;
+      transition: background-color $transition-duration;
+
+      &:hover {
+        background-color: rgba($secondary-color, 0.1);
+      }
+    }
+    .promo-text{
+      color: $secondary-color;
+    }
+  }
+}
